@@ -8,8 +8,7 @@ This is a solution to the [Clipboard landing page challenge on Frontend Mentor](
 - Live Site URL: https://reto11-krohz.netlify.app/
 
 ## Preview
-
-
+![reto11-krohz netlify app_](https://user-images.githubusercontent.com/90885563/152247838-ee5f3a3f-c089-488b-80be-3c551d0f624d.png)
 
 ### Built with
 - Semantic HTML5 markup
@@ -22,3 +21,4 @@ This is a solution to the [Clipboard landing page challenge on Frontend Mentor](
 # Author
 - Twitter - [@AcsKros](https://twitter.com/AcsKros)
 - FrontMentor - [Krohz]https://www.frontendmentor.io/profile/Krohz
+
