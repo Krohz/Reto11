@@ -1,0 +1,381 @@
+:root {
+    --black: #262626;
+    --white: #FFF;
+    --DarkGrayishBlue: hsl(210, 10%, 33%);
+    --GrayishBlue: hsl(201, 11%, 66%);
+    --StrongCyan: hsl(171, 66%, 44%);
+    --LightBlue: hsl(233, 100%, 69%);
+
+    --fuente-principal: 'Bai Jamjuree', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.8rem;
+    font-family: var(--fuente-principal);
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.contenedor {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 70rem;
+}
+
+/* HEADER */
+
+.header {
+    background-image: url(../images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@media (min-width: 768px) {
+    .header {
+        background-image: url(../images/bg-header-desktop.png);
+    }
+}
+
+.header__logo {
+    margin: 0 auto;
+    padding: 10rem 0 5rem 0;
+}
+
+.header__titulo {
+    text-align: center;
+    color: var(--DarkGrayishBlue);
+    line-height: 1;
+}
+
+.header__texto {
+    color: var(--GrayishBlue);
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1.6rem;
+}
+
+.header__botons {
+    text-align: center;
+    margin-top: 3.5rem;
+}
+
+
+.boton {
+    padding: 1.3rem 3.5rem;
+    border-radius: 10rem;
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .boton {
+        display: unset;
+    }
+}
+
+.boton-green {
+    border-bottom: 2px solid hsl(171, 66%, 35%);
+    background-color: var(--StrongCyan);
+    margin-bottom: 2rem;
+    box-shadow: var(--StrongCyan) 0px 0px 10px 0px, var(--StrongCyan) 0px 0px 0px 1px;
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+
+.boton-green:hover {
+    background-color: hsl(171, 50%, 56%);
+}
+
+@media (min-width: 768px) {
+    .boton-green {
+        margin: 2rem;
+    }
+}
+
+.boton-blue {
+    background-color: var(--LightBlue);
+    border-bottom: 2px solid hsl(233, 65%, 60%);
+    box-shadow: var(--LightBlue) 0px 0px 10px 0px, var(--LightBlue) 0px 0px 0px 1px;
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+
+.boton-blue:hover {
+    background-color: hsl(233, 55%, 64%);
+}
+
+/* Main */
+
+.main {
+    margin-top: 15rem;
+}
+
+.main__titulo {
+    color: var(--DarkGrayishBlue);
+    text-align: center;
+    font-size: 3.5rem;
+    line-height: 1.2;
+}
+
+.main__texto {
+    color: var(--GrayishBlue);
+    text-align: center;
+    margin-top: 3rem;
+}
+
+@media (min-width: 768px) {
+    .main__grid {
+        margin-top: 10rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+}
+
+.grid__computadora {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+
+@media (min-width: 768px) {
+    .grid__computadora {
+        margin-left: -5rem;
+        margin-top: 0;
+    }
+}
+
+.grid__titulo {
+    margin: 0;
+    color: var(--DarkGrayishBlue);
+    line-height: 1;
+}
+
+.grid__texto {
+    color: var(--GrayishBlue);
+    margin-bottom: 5rem;
+}
+
+.grid__contenido {
+    margin-top: 10rem;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .grid__contenido {
+        margin-top: 0;
+        text-align: left;
+        width: 60%;
+        margin-left: -5rem;
+    }
+}
+
+.main__titulo-secundario {
+    margin-top: 10rem;
+    font-size: 3.5rem;
+    color: var(--DarkGrayishBlue);
+    text-align: center;
+}
+
+.main__texto-secundario {
+    margin-top: 2rem;
+    margin-bottom: 10rem;
+}
+
+.main__imagen {
+    margin: 0 auto;
+}
+
+/* CHARGE */
+.charge {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+.charge__titulo {
+    text-align: center;
+    color: var(--DarkGrayishBlue);
+    font-size: 3rem;
+}
+
+.charge__texto {
+    text-align: center;
+    color: var(--GrayishBlue);
+}
+
+.charge__grid {
+    margin: 0 auto;
+    margin-top: 5rem;
+    display: grid;
+    width: 90%;
+    max-width: 120rem;
+}
+
+@media (min-width: 768px) {
+    .charge__grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+    }
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box__imagen {
+    width: 5rem;
+}
+
+.box__titulo {
+    text-align: center;
+    color: var(--DarkGrayishBlue);
+}
+
+.box__texto {
+    text-align: center;
+    color: var(--GrayishBlue);
+    margin-bottom: 10rem;
+}
+
+/*COMPANIES*/
+
+.companies {
+    width: 90%;
+    max-width: 120rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+@media (min-width: 992px) {
+    .companies {
+        flex-direction: row;
+    }
+}
+
+/* DOWNLOAD */
+.download {
+    margin-top: 15rem;
+}
+
+.download__titulo {
+    color: var(--DarkGrayishBlue);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.download__texto {
+    color: var(--GrayishBlue);
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.download__botons {
+    text-align: center;
+}
+
+/* FOOTER */
+.footer {
+    margin-top: 10rem;
+    background-color: #f5f4f4;
+    padding: 5rem 0;
+}
+
+.footer__flex {
+    display: flex;
+    width: 90%;
+    max-width: 120rem;
+    margin: 0 auto;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .footer__flex {
+        justify-content: space-between;
+        flex-direction: row;
+    }
+}
+
+.footer__grid {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2rem;
+    gap: 2rem;
+}
+
+.link__enlace {
+    color: var(--DarkGrayishBlue);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link__enlace:hover {
+    color: var(--StrongCyan);
+}
+
+@media (min-width: 768px) {
+    .footer__grid {
+        margin-top: 0rem;
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 0rem;
+        text-align: left;
+    }
+
+    .link__enlace:nth-child(2) {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .link__enlace:nth-child(4) {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+}
+
+.footer__logo {
+    width: 7rem;
+}
+
+.redes {
+    margin-top: 2rem;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.autor {
+    color: black;
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem 0 0.5rem 0;
+}
