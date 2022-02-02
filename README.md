@@ -20,5 +20,5 @@ This is a solution to the [Clipboard landing page challenge on Frontend Mentor](
 
 # Author
 - Twitter - [@AcsKros](https://twitter.com/AcsKros)
-- FrontMentor - [Krohz]https://www.frontendmentor.io/profile/Krohz
+- FrontMentor - [@Krohz](https://www.frontendmentor.io/profile/Krohz)
 
